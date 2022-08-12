@@ -10,9 +10,6 @@ echo "CHANGE_BRANCH: ${CHANGE_BRANCH}"
 git clone https://github.optum.com/APIGateway/kong-oidc-multi-idp.git --branch ${CHANGE_BRANCH}
 mv kong-oidc-multi-idp/* mv kong-oidc-multi-idp/.* ../kong-plugin/
 
-git clone https://github.optum.com/APIGateway/kong-oidc-multi-idp.git --branch ${CHANGE_BRANCH}
-mv kong-oidc-multi-idp/* mv kong-oidc-multi-idp/.* ../kong-plugin/
-
 # if we have preferences for busted set, move them to /kong
 # such that busted will pick them up automagically
 if [ -f /kong-plugin/.busted ]; then
