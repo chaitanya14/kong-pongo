@@ -124,5 +124,12 @@ fi
 if [ ! "$SUPPRESS_KONG_VERSION" = "true" ]; then
   echo "Kong version: $(kong version)"
 fi
+echo "Hi"
+pwd
+ls -lrt
+cd ..
+cd /kong-plugin
+echo "Hi"
+ls -lrt
 
 exec "$@"
