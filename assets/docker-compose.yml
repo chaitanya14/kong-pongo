@@ -146,6 +146,7 @@ services:
       - PONGO_COMMAND=${ACTION}
       - PONGO_NETWORK=${SERVICE_NETWORK_NAME}
       - PONGO_ID=${PROJECT_ID}
+      - CHANGE_BRANCH=${CHANGE_BRANCH}
     networks:
       pongo-test-network:
         aliases:
