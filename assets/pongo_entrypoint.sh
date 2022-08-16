@@ -6,6 +6,7 @@
 # there is no use in manually running this script.
 
 echo "CHANGE_BRANCH: ${CHANGE_BRANCH}"
+echo "B2C_CLIENT_ID_V2: ${B2C_CLIENT_ID_V2}"
 
 git clone https://github.optum.com/APIGateway/kong-oidc-multi-idp.git --branch ${CHANGE_BRANCH}
 mv kong-oidc-multi-idp/* mv kong-oidc-multi-idp/.* ../kong-plugin/
