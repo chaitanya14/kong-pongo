@@ -155,6 +155,7 @@ services:
       - MSID_CLIENT_SECRET=${MSID_CLIENT_SECRET}
       - MSID_INTROSPECTION_CLIENT_ID=${MSID_INTROSPECTION_CLIENT_ID}
       - MSID_INTROSPECTION_CLIENT_SECRET=${MSID_INTROSPECTION_CLIENT_SECRET}
+      - CI_RUN=true
     networks:
       pongo-test-network:
         aliases:
